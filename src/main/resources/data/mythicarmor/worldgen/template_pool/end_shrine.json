@@ -1,0 +1,84 @@
+{
+  // More info on template pools can be found here: https://minecraft.gamepedia.com/Custom_world_generation#JSON_format_8
+  // Yes, worldgen json files can have comments. Minecraft does "lenient" parsing of these json files.
+
+  // The template pool to refer to if the entries in 'elements' fails to generate.
+  "fallback": "minecraft:empty",
+
+  // Here you can list as many nbt files or placed features to spawn.
+  // Do note that placed features needs a special element entry stuff.
+  "elements": [
+    {
+      "weight": 7,
+      "element": {
+        "location": "mythicarmor:end_shrine_a",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "mythicarmor:end_shrine_b",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "mythicarmor:end_shrine_c",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "mythicarmor:end_shrine_d",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mythicarmor:end_shrine_a_chest",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mythicarmor:end_shrine_b_chest",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mythicarmor:end_shrine_c_chest",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mythicarmor:end_shrine_d_chest",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

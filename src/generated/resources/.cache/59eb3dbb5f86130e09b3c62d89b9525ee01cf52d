@@ -1,0 +1,5 @@
+// 1.21.1	2024-11-08T21:52:16.9935423	Loot Tables
+f6727c1545bc2887733f519844f413f1f312f270 data/mythicarmor/loot_table/blocks/imbuing_station.json
+394854d94074907b5ed6ad4da08bf5a4bce65be4 data/mythicarmor/loot_table/blocks/mythic_block.json
+ac2c9e378e288ff6e641d6ab36d225993d96944a data/mythicarmor/loot_table/blocks/mythic_ore.json
+ddddfe4c9829d80975dc31249d924c863ecc1bee data/mythicarmor/loot_table/blocks/mythic_shard_block.json

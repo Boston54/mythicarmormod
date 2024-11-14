@@ -1,0 +1,13 @@
+// 1.21.1	2024-11-13T03:00:05.4676559	Tags for minecraft:item mod id mythicarmor
+b9e55970f452275fd29431e061df15e1048ae2ba data/minecraft/tags/item/axes.json
+f7cc32de458dfede9fd5afcbf0a0bf57b0e45bf1 data/minecraft/tags/item/chest_armor.json
+47a77a8e7033220ff258056f98d2c5331ae96fd6 data/minecraft/tags/item/dyeable.json
+54643c129c3c069f1efabd40084eb3c8f5362a59 data/minecraft/tags/item/foot_armor.json
+5600557d0be06aefa90033358c651f85610f5134 data/minecraft/tags/item/head_armor.json
+2d536f03e8b9737832572d3bfba3efb2a606e892 data/minecraft/tags/item/hoes.json
+b4035f4921b7b3db8f23890de536f028cdb1e3ea data/minecraft/tags/item/leg_armor.json
+92e5f9ac9a0d265906dd37d540bb30d6abc8c91e data/minecraft/tags/item/pickaxes.json
+c60e8d9d434c63bbad83181875b64631a67b67e3 data/minecraft/tags/item/shovels.json
+652798f0ea3eadf5fad5cc7504de0f1b973428ed data/minecraft/tags/item/swords.json
+47a77a8e7033220ff258056f98d2c5331ae96fd6 data/minecraft/tags/item/trimmable_armor.json
+96e3ccf342c3bbf7443d79c1644a3e9c8612029b data/minecraft/tags/item/trim_materials.json

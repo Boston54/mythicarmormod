@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mythicarmor:item/mythic_boots",
+    "layer1": "mythicarmor:item/mythic_boots_overlay",
+    "layer2": "minecraft:trims/items/boots_trim_emerald"
+  }
+}

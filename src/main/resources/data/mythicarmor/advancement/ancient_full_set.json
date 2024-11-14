@@ -1,0 +1,70 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicarmor:mythic_sword",
+      "components": {
+        "mythicarmor:imbuement.mythicarmor.imbue.ancient": 100,
+        "mythicarmor:imbuement.total": 100
+      }
+    },
+    "title": "Dedicated Grinder",
+    "description": "Kill something while wearing a full set of 100% ancient mythic armor using a 100% ancient mythic sword.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mythicarmor:imbue_ancient",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "head": {
+                      "items": "mythicarmor:mythic_helmet",
+                      "components": {
+                        "mythicarmor:imbuement.mythicarmor.imbue.ancient": 100
+                      }
+                    },
+                    "chest": {
+                      "items": "mythicarmor:mythic_chestplate",
+                      "components": {
+                        "mythicarmor:imbuement.mythicarmor.imbue.ancient": 100
+                      }
+                    },
+                    "legs": {
+                      "items": "mythicarmor:mythic_leggings",
+                      "components": {
+                        "mythicarmor:imbuement.mythicarmor.imbue.ancient": 100
+                      }
+                    },
+                    "feet": {
+                      "items": "mythicarmor:mythic_boots",
+                      "components": {
+                        "mythicarmor:imbuement.mythicarmor.imbue.ancient": 100
+                      }
+                    },
+                    "mainhand": {
+                      "items": "mythicarmor:mythic_sword",
+                      "components": {
+                        "mythicarmor:imbuement.mythicarmor.imbue.ancient": 100
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

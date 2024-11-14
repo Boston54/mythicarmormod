@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:prismarine_shard"
+    },
+    {
+      "item": "minecraft:prismarine_crystals"
+    },
+    {
+      "item": "mythicarmor:mythic_shard"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "mythicarmor:sea_essence"
+  }
+}

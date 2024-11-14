@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:end_stone"
+    },
+    "S": {
+      "item": "mythicarmor:mythic_shard"
+    },
+    "U": {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "SUS",
+    "SES",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mythicarmor:mythic_upgrade"
+  }
+}

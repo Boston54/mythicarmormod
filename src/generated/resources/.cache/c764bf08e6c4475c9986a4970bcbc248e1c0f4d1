@@ -1,0 +1,10 @@
+// 1.21.1	2024-11-08T21:53:40.1250911	Block States: mythicarmor
+22660dcb768514267e0d823e9940c558f501beb4 assets/mythicarmor/blockstates/mythic_block.json
+b9a93613ef3a780e5f75fa65131021f94e070385 assets/mythicarmor/blockstates/mythic_ore.json
+13f992435cbdcb09c9eaa077713146ca68338462 assets/mythicarmor/blockstates/mythic_shard_block.json
+3d0e31a979ec42e9378fe202cb3239a85cf2621c assets/mythicarmor/models/block/mythic_block.json
+23835cae19d37aba59ed9da98f2540fa90009c0b assets/mythicarmor/models/block/mythic_ore.json
+9e4c7527e7a2ab146b2669016734062f6c016744 assets/mythicarmor/models/block/mythic_shard_block.json
+b074f41b47415ba7c78ca30f7e2c3cc61d59461a assets/mythicarmor/models/item/mythic_block.json
+3d6c44ab4069a59fe48f70f41d1536384f485e96 assets/mythicarmor/models/item/mythic_ore.json
+ef8ad53733bc449276059a178c1c8c0b374f6d7d assets/mythicarmor/models/item/mythic_shard_block.json

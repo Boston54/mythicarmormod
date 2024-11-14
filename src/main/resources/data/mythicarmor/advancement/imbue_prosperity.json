@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicarmor:mythic_chestplate",
+      "components": {
+        "mythicarmor:imbuement.mythicarmor.imbue.prosperity": 100,
+        "mythicarmor:imbuement.total": 100
+      }
+    },
+    "title": "Lucky",
+    "description": "Imbue an item with 100% Prosperity",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mythicarmor:essence",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#mythicarmor:mythic",
+            "components": {
+              "mythicarmor:imbuement.mythicarmor.imbue.prosperity": 100
+            }
+          }
+        ]
+      }
+    }
+  }
+}

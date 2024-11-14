@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicarmor:mythic_chestplate",
+      "components": {
+        "mythicarmor:imbuement.mythicarmor.imbue.sea": 100,
+        "mythicarmor:imbuement.total": 100
+      }
+    },
+    "title": "Speedboat",
+    "description": "Imbue an item with 100% Sea",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mythicarmor:essence",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "#mythicarmor:mythic",
+            "components": {
+              "mythicarmor:imbuement.mythicarmor.imbue.sea": 100
+            }
+          }
+        ]
+      }
+    }
+  }
+}

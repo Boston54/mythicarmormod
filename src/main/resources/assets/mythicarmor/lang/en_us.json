@@ -1,0 +1,36 @@
+{
+  "item.mythicarmor.mythic_shard": "Mythic Shard",
+  "item.mythicarmor.mythic_ingot": "Mythic Ingot",
+
+  "item.mythicarmor.mythic_upgrade": "Mythic Upgrade",
+
+  "item.mythicarmor.mythic_sword": "Mythic Sword",
+  "item.mythicarmor.mythic_axe": "Mythic Axe",
+  "item.mythicarmor.mythic_pickaxe": "Mythic Pickaxe",
+  "item.mythicarmor.mythic_shovel": "Mythic Shovel",
+  "item.mythicarmor.mythic_hoe": "Mythic Hoe",
+
+  "item.mythicarmor.mythic_helmet": "Mythic Helmet",
+  "item.mythicarmor.mythic_chestplate": "Mythic Chestplate",
+  "item.mythicarmor.mythic_leggings": "Mythic Leggings",
+  "item.mythicarmor.mythic_boots": "Mythic Boots",
+
+  "item.mythicarmor.mythic_elytra": "Mythic Elytra",
+
+  "item.mythicarmor.magma_essence": "Essence of Magma",
+  "item.mythicarmor.end_essence": "Essence of The End",
+  "item.mythicarmor.prosperity_essence": "Essence of Prosperity",
+  "item.mythicarmor.amethyst_essence": "Essence of Amethyst",
+  "item.mythicarmor.agility_essence": "Essence of Agility",
+  "item.mythicarmor.ancient_essence": "Essence of The Ancients",
+  "item.mythicarmor.sea_essence": "Essence of The Seas",
+
+  "block.mythicarmor.mythic_ore": "Mythic Ore",
+  "block.mythicarmor.mythic_shard_block": "Mythic Shard Block",
+  "block.mythicarmor.mythic_block": "Mythic Block",
+  "block.mythicarmor.imbuing_station": "Imbuing Station",
+
+  "creativetab.mythicarmor.mythic_armor": "Mythic Armor",
+
+  "stat.mythicarmor.burnt_imbuements": "Imbuements Burnt Off"
+}

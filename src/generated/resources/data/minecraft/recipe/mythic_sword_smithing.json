@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mythicarmor:mythic_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "result": {
+    "count": 1,
+    "id": "mythicarmor:mythic_sword"
+  },
+  "template": {
+    "item": "mythicarmor:mythic_upgrade"
+  }
+}

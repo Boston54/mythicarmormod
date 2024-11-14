@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "me.boston.mythicarmor.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BlockMixin",
+    "EnchantmentHelperMixin",
+    "ItemStackMixin",
+    "LivingEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

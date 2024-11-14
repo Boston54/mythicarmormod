@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "S": {
+      "item": "mythicarmor:mythic_shard"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SNS",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mythicarmor:mythic_ingot"
+  }
+}

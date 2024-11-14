@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "mythicarmor:mythic_shard"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "mythicarmor:magma_essence"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "structures": [
+    {
+      "structure": "mythicarmor:end_shrine_a",
+      "weight": 7
+    },
+    {
+      "structure": "mythicarmor:end_shrine_b",
+      "weight": 7
+    },
+    {
+      "structure": "mythicarmor:end_shrine_c",
+      "weight": 7
+    },
+    {
+      "structure": "mythicarmor:end_shrine_d",
+      "weight": 7
+    },
+    {
+      "structure": "mythicarmor:end_shrine_a_chest",
+      "weight": 1
+    },
+    {
+      "structure": "mythicarmor:end_shrine_b_chest",
+      "weight": 1
+    },
+    {
+      "structure": "mythicarmor:end_shrine_c_chest",
+      "weight": 1
+    },
+    {
+      "structure": "mythicarmor:end_shrine_d_chest",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 9662039,
+
+    // The average distance apart in chunks for spawn attempts
+    "spacing": 5,
+    // Minimum distance apart in chunks for spawn attempts
+    "separation": 2
+  }
+}

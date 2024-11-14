@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicarmor:mythic_chestplate",
+      "components": {
+        "mythicarmor:imbuement.mythicarmor.imbue.amethyst": 100,
+        "mythicarmor:imbuement.total": 100
+      }
+    },
+    "title": "Tank",
+    "description": "Imbue an item with 100% Amethyst",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mythicarmor:essence",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#mythicarmor:mythic",
+            "components": {
+              "mythicarmor:imbuement.mythicarmor.imbue.amethyst": 100
+            }
+          }
+        ]
+      }
+    }
+  }
+}

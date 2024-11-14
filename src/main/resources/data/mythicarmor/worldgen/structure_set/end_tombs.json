@@ -1,0 +1,29 @@
+{
+  "structures": [
+    {
+      "structure": "mythicarmor:end_tomb_a",
+      "weight": 1
+    },
+    {
+      "structure": "mythicarmor:end_tomb_b",
+      "weight": 1
+    },
+    {
+      "structure": "mythicarmor:end_tomb_c",
+      "weight": 1
+    },
+    {
+      "structure": "mythicarmor:end_tomb_d",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 9662040,
+
+    // The average distance apart in chunks for spawn attempts
+    "spacing": 40,
+    // Minimum distance apart in chunks for spawn attempts
+    "separation": 10
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicarmor:mythic_chestplate",
+      "components": {
+        "mythicarmor:imbuement.mythicarmor.imbue.amethyst": 100,
+        "mythicarmor:imbuement.total": 100
+      }
+    },
+    "title": "Mythical+",
+    "description": "Obtain a full set of fully imbued Mythic Armor.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mythicarmor:mythic_armor",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythicarmor:mythic_helmet",
+            "components": {
+              "mythicarmor:imbuement.total": 100
+            }
+          },
+          {
+            "items": "mythicarmor:mythic_chestplate",
+            "components": {
+              "mythicarmor:imbuement.total": 100
+            }
+          },
+          {
+            "items": "mythicarmor:mythic_leggings",
+            "components": {
+              "mythicarmor:imbuement.total": 100
+            }
+          },
+          {
+            "items": "mythicarmor:mythic_boots",
+            "components": {
+              "mythicarmor:imbuement.total": 100
+            }
+          }
+        ]
+      }
+    }
+  }
+}

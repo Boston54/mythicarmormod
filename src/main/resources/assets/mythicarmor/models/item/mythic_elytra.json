@@ -1,0 +1,15 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mythicarmor:item/mythic_elytra",
+    "layer1": "mythicarmor:item/mythic_elytra_overlay"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "damage": 0.998
+      },
+      "model": "mythicarmor:item/mythic_elytra_broken"
+    }
+  ]
+}
