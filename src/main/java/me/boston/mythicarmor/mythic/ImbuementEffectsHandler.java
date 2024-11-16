@@ -2,6 +2,7 @@ package me.boston.mythicarmor.mythic;
 
 import com.google.common.collect.Streams;
 import me.boston.mythicarmor.MythicArmor;
+import me.boston.mythicarmor.item.ModItems;
 import me.boston.mythicarmor.mythic.items.interfaces.IMythicArmor;
 import me.boston.mythicarmor.mythic.items.interfaces.IMythicTool;
 import me.boston.mythicarmor.mythic.items.interfaces.IMythicWeapon;
@@ -334,11 +335,6 @@ public class ImbuementEffectsHandler {
         }
     }
 
-    private static final ResourceLocation AMETHYST_HEALTH_RESOURCE = ResourceLocation.fromNamespaceAndPath(MythicArmor.MODID, "amethyst_health");
-    private static final ResourceLocation AMETHYST_SPEED_RESOURCE = ResourceLocation.fromNamespaceAndPath(MythicArmor.MODID, "amethyst_speed");
-    private static final ResourceLocation AGILITY_SPEED_RESOURCE = ResourceLocation.fromNamespaceAndPath(MythicArmor.MODID, "agility_speed");
-    public static final ResourceLocation AGILITY_ATTACK_SPEED_RESOURCE = ResourceLocation.fromNamespaceAndPath(MythicArmor.MODID, "agility_attackspeed");
-
     public static ItemAttributeModifiers getDefaultAttributeModifiers(ItemAttributeModifiers attributeModifiers, ItemStack itemStack) {
         EquipmentSlotGroup equipmentSlotGroup = getEquipmentSlotGroup(itemStack.getItem());
 
@@ -348,11 +344,11 @@ public class ImbuementEffectsHandler {
                 attributeModifiers = attributeModifiers
                         .withModifierAdded(
                                 Attributes.MAX_HEALTH,
-                                new AttributeModifier(AMETHYST_HEALTH_RESOURCE, AMETHYST_MAX_HP * amethyst, AttributeModifier.Operation.ADD_VALUE),
+                                new AttributeModifier(AttributeResources.AMETHYST_HEALTH.getByItem(itemStack.getItem()), AMETHYST_MAX_HP * amethyst, AttributeModifier.Operation.ADD_VALUE),
                                 equipmentSlotGroup)
                         .withModifierAdded(
                                 Attributes.MOVEMENT_SPEED,
-                                new AttributeModifier(AMETHYST_SPEED_RESOURCE, -AMETHYST_MOVE_SPEED * amethyst / 100f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new AttributeModifier(AttributeResources.AMETHYST_SPEED.getByItem(itemStack.getItem()), -AMETHYST_MOVE_SPEED * amethyst / 100f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                                 equipmentSlotGroup);
             }
         }
@@ -363,16 +359,7 @@ public class ImbuementEffectsHandler {
                 attributeModifiers = attributeModifiers
                         .withModifierAdded(
                                 Attributes.MOVEMENT_SPEED,
-                                new AttributeModifier(AGILITY_SPEED_RESOURCE, AGILITY_MOVE_SPEED * agility / 100f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                                equipmentSlotGroup
-                        );
-            }
-
-            if (itemStack.getItem() instanceof IMythicWeapon) { // todo for some reason this method isnt even being called on anything except armor so this doesnt work
-                attributeModifiers = attributeModifiers
-                        .withModifierAdded(
-                                Attributes.ATTACK_SPEED,
-                                new AttributeModifier(AGILITY_ATTACK_SPEED_RESOURCE, AGILITY_ATTACK_SPEED * agility, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new AttributeModifier(AttributeResources.AGILITY_SPEED.getByItem(itemStack.getItem()), AGILITY_MOVE_SPEED * agility / 100f, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                                 equipmentSlotGroup
                         );
             }
@@ -431,5 +418,39 @@ public class ImbuementEffectsHandler {
         Random random = new Random();
         float rand = random.nextFloat();
         return rand <= percentage / 100f;
+    }
+
+    public static class AttributeResources {
+        public static AttributeResources AMETHYST_HEALTH = new AttributeResources("amethyst_health");
+        public static AttributeResources AMETHYST_SPEED = new AttributeResources("amethyst_speed");
+        public static AttributeResources AGILITY_SPEED = new AttributeResources("agility_speed");
+        public static AttributeResources AGILITY_ATTACK_SPEED = new AttributeResources("agility_attack_speed");
+
+        private ResourceLocation helmetResource;
+        private ResourceLocation chestplateResource;
+        private ResourceLocation leggingsResource;
+        private ResourceLocation bootsResource;
+        private ResourceLocation mainhandResource;
+
+        public AttributeResources(String name) {
+            helmetResource = ResourceLocation.fromNamespaceAndPath(MythicArmor.MODID, name + "_helmet");
+            chestplateResource = ResourceLocation.fromNamespaceAndPath(MythicArmor.MODID, name + "_chestplate");
+            leggingsResource = ResourceLocation.fromNamespaceAndPath(MythicArmor.MODID, name + "_leggings");
+            bootsResource = ResourceLocation.fromNamespaceAndPath(MythicArmor.MODID, name + "_boots");
+            mainhandResource = ResourceLocation.fromNamespaceAndPath(MythicArmor.MODID, name + "_mainhand");
+        }
+
+        public ResourceLocation getByItem(Item item) {
+             if (item == ModItems.MYTHIC_HELMET.get()) {
+                 return helmetResource;
+             } else if (item == ModItems.MYTHIC_CHESTPLATE.get()) {
+                 return chestplateResource;
+             } else if (item == ModItems.MYTHIC_LEGGINGS.get()) {
+                 return leggingsResource;
+             } else if (item == ModItems.MYTHIC_BOOTS.get()) {
+                 return bootsResource;
+             }
+             return mainhandResource;
+        }
     }
 }

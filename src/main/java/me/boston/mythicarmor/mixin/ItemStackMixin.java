@@ -56,7 +56,7 @@ public abstract class ItemStackMixin {
                     builder.add(new ItemAttributeModifiers.Entry(
                             Attributes.ATTACK_SPEED,
                             new AttributeModifier(
-                                    ImbuementEffectsHandler.AGILITY_ATTACK_SPEED_RESOURCE,
+                                    ImbuementEffectsHandler.AttributeResources.AGILITY_ATTACK_SPEED.getByItem(stack.getItem()),
                                     agility * ImbuementEffectsHandler.AGILITY_ATTACK_SPEED / 100f,
                                     AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                             EquipmentSlotGroup.MAINHAND

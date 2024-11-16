@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "mythicarmor:mythic_shard",
-          "weight": 48,
+          "weight": 24,
           "functions": [
             {
               "function": "minecraft:set_count",
